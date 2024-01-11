@@ -3,28 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
-
-<meta property="og:type" content="article" />
- 
-<link rel="icon" href="icon.png" />
-<title>fresher's 24 </title>
-<meta name="title" content="fresher's 24 ">
-
-
-
-<meta property="og:image" content="image.png" />
+  <link rel="icon" href="icon.png" />
   <title>Can I Ask You Out On Freshers?👉🏻👈🏻</title>
   <style>
-   body {
-  font-family: 'Georgia', serif;
-  text-align: center;
-  background: url('your-artistic-background.jpg') center/cover;
-  margin: 0;
-  padding: 0;
-  color: #fff;
-}
-
+    body {
+      font-family: 'Georgia', serif;
+      text-align: center;
+      background: url('your-artistic-background.jpg') center/cover;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+    }
 
     .container {
       display: flex;
@@ -79,27 +68,13 @@
 <body>
   <div class="container">
     <h1>Can I Ask You Out On Freshers?👉🏻👈🏻</h1>
-    <button onclick="showCongratulations()">Yessss</button>
-    <div id="spotifyContainer"></div>
+    <button onclick="redirectToLink()">Yessss</button>
   </div>
 
   <script>
-    function showCongratulations() {
-      window.alert("hehe cool, here's a Taylor Swift playlist. Enjoy!");
-      createSpotifyIframe();
-    }
-
-    function createSpotifyIframe() {
-      var spotifyContainer = document.getElementById("spotifyContainer");
-      var iframe = document.createElement("iframe");
-      iframe.src = "https://open.spotify.com/embed/playlist/6A9eydePD13OdzhBAUsk0X?si=0a2fee0982384334";
-      iframe.classList.add("spotify-iframe");
-      iframe.frameBorder = "0";
-      iframe.allowFullscreen = true;
-      iframe.allow = "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture";
-      iframe.loading = "lazy";
-      spotifyContainer.innerHTML = ""; // Clear previous content
-      spotifyContainer.appendChild(iframe);
+    function redirectToLink() {
+      // Redirect to the desired link
+      window.location.href = 'https://open.spotify.com/playlist/6A9eydePD13OdzhBAUsk0X?si=128704d313f64d35'; // Replace with your desired link
     }
   </script>
 </body>
